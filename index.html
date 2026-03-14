@@ -28,14 +28,39 @@
         --color-grayColor: #64748b;
         --color-darkGrayColor: #323b49;
         --color-blueColor: #3b82f6;
+        --color-bgColor: #f8fafc;
 
         --font-Inter: Inter;
       }
     </style>
   </head>
-  <body class="font-Inter">
-    <h2>B13-A4-PH-Job-Tracker</h2>
+  <body class="w-11/12 lg:w-5/6 2xl:w-9/10 mx-auto my-5 bg-bgColor font-Inter">
+    <header>
+      <h1 class="font-bold text-2xl lg:text-3xl xl:text-4xl text-blackColor">
+        Job Application Tracker
+      </h1>
+      <!-- Count Section Container -->
+      <div class="flex justify-between items-center gap-6 text-center">
+        <!-- Total -->
+        <div class="w-full bg-white p-5 shadow-md rounded-lg mt-6 space-y-1 border border-[#E6E7E9]">
+          <h6 class="text-lg font-medium">Total</h6>
+          <p class="text-2xl text-blackColor font-extrabold pl-2">8</p>
+        </div>
 
+        <!-- Interview -->
+        <div class="w-full bg-white p-5 shadow-md rounded-lg mt-6 space-y-1 border border-[#E6E7E9]">
+          <h6 class="text-lg font-medium">Interview</h6>
+          <p class="text-2xl text-greenColor font-extrabold pl-2">0</p>
+        </div>
+        <!-- Rejected -->
+        <div class="w-full bg-white p-5 shadow-md rounded-lg mt-6 space-y-1 border border-[#E6E7E9]">
+          <h6 class="text-lg font-medium">Rejected</h6>
+          <p class="text-2xl text-redColor font-extrabold pl-2">8</p>
+        </div>
+      </div>
+      <hr class="text-[#d2d2d2] my-6" />
+    </header>
+    <main></main>
     <script src="./utils.js"></script>
     <script src="./script.js"></script>
   </body>
