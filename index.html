@@ -54,14 +54,24 @@
           class="w-full bg-white p-5 shadow-md rounded-lg mt-6 space-y-1 border border-[#E6E7E9]"
         >
           <h6 class="text-lg font-medium">Interview</h6>
-          <p class="text-2xl text-greenColor font-extrabold pl-2">0</p>
+          <p
+            id="dashboard-interview-job-count"
+            class="text-2xl text-greenColor font-extrabold pl-2"
+          >
+            0
+          </p>
         </div>
         <!-- Rejected -->
         <div
           class="w-full bg-white p-5 shadow-md rounded-lg mt-6 space-y-1 border border-[#E6E7E9]"
         >
           <h6 class="text-lg font-medium">Rejected</h6>
-          <p class="text-2xl text-redColor font-extrabold pl-2">0</p>
+          <p
+            id="dashboard-rejected-job-count"
+            class="text-2xl text-redColor font-extrabold pl-2"
+          >
+            0
+          </p>
         </div>
       </div>
       <hr class="text-[#d2d2d2] my-6" />
@@ -71,9 +81,9 @@
         <div class="flex justify-between items-center">
           <h3 class="text-xl font-semibold text-blackColor">Available Jobs</h3>
           <p class="text-grayColor font-medium">
-            <span id="available-job-count">8</span>
-            <span id="available-interview-count" class="hidden">1</span>
-            <span id="available-rejected-count" class="hidden">2</span>
+            <span id="nav-all-job-count">8</span>
+            <span id="nav-interview-job-count" class="hidden">1</span>
+            <span id="nav-rejected-job-count" class="hidden">2</span>
             jobs
           </p>
         </div>
@@ -131,12 +141,12 @@
           <!-- button container -->
           <div>
             <button
-              class="bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
+              class="interview-btn bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
             >
               Interview
             </button>
             <button
-              class="bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
+              class="rejected-btn bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
             >
               Rejected
             </button>
@@ -173,12 +183,12 @@
           <!-- button container -->
           <div>
             <button
-              class="bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
+              class="interview-btn bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
             >
               Interview
             </button>
             <button
-              class="bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
+              class="rejected-btn bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
             >
               Rejected
             </button>
@@ -215,12 +225,12 @@
           <!-- button container -->
           <div>
             <button
-              class="bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
+              class="interview-btn bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
             >
               Interview
             </button>
             <button
-              class="bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
+              class="rejected-btn bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
             >
               Rejected
             </button>
@@ -257,12 +267,12 @@
           <!-- button container -->
           <div>
             <button
-              class="bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
+              class="interview-btn bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
             >
               Interview
             </button>
             <button
-              class="bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
+              class="rejected-btn bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
             >
               Rejected
             </button>
@@ -300,12 +310,12 @@
           <!-- button container -->
           <div>
             <button
-              class="bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
+              class="interview-btn bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
             >
               Interview
             </button>
             <button
-              class="bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
+              class="rejected-btn bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
             >
               Rejected
             </button>
@@ -343,12 +353,12 @@
           <!-- button container -->
           <div>
             <button
-              class="bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
+              class="interview-btn bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
             >
               Interview
             </button>
             <button
-              class="bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
+              class="rejected-btn bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
             >
               Rejected
             </button>
@@ -386,12 +396,12 @@
           <!-- button container -->
           <div>
             <button
-              class="bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
+              class="interview-btn bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
             >
               Interview
             </button>
             <button
-              class="bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
+              class="rejected-btn bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
             >
               Rejected
             </button>
@@ -429,6 +439,53 @@
           <!-- button container -->
           <div>
             <button
+              class="interview-btn bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
+            >
+              Interview
+            </button>
+            <button
+              class="rejected-btn bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
+            >
+              Rejected
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Interview job container -->
+      <section id="interview-job-container" class="hidden my-6 space-y-4">
+        <!-- card-one -->
+        <div
+          class="bg-white p-5 border border-[#e8e8ea] rounded-lg space-y-4"
+        >
+          <div class="flex justify-between items-center">
+            <div>
+              <h3 class="text-xl font-semibold text-blackColor mb-1">
+                Mobile First Corp Interview
+              </h3>
+              <h5 class="text-grayColor">React Native Developer</h5>
+            </div>
+            <button>
+              <i
+                class="text-grayColor border border-[#e7e7ea] p-3 rounded-full cursor-pointer fa-solid fa-trash-can"
+              ></i>
+            </button>
+          </div>
+          <p class="text-grayColor pb-1">
+            Remote • Full-time • $130,000 - $175,000
+          </p>
+          <div class="bg-[#EEF4FF] inline px-4 py-2.5 rounded-md">
+            <span class="text-md font-medium text-blackColor uppercase"
+              >Not Applied</span
+            >
+          </div>
+          <p class="pt-5 text-darkGrayColor">
+            Build cross-platform mobile applications using React Native. Work on
+            products used by millions of users worldwide.
+          </p>
+          <!-- button container -->
+          <div>
+            <button
               class="bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
             >
               Interview
@@ -442,7 +499,64 @@
         </div>
       </section>
 
-      
+      <!--  Rejected job container -->
+      <section id="rejected-job-container" class="hidden my-6 space-y-4">
+        <!-- card-one -->
+        <div
+          class="bg-white p-5 border border-[#e8e8ea] rounded-lg space-y-4"
+        >
+          <div class="flex justify-between items-center">
+            <div>
+              <h3 class="text-xl font-semibold text-blackColor mb-1">
+                Mobile First Corp Rejection
+              </h3>
+              <h5 class="text-grayColor">React Native Developer</h5>
+            </div>
+            <button>
+              <i
+                class="text-grayColor border border-[#e7e7ea] p-3 rounded-full cursor-pointer fa-solid fa-trash-can"
+              ></i>
+            </button>
+          </div>
+          <p class="text-grayColor pb-1">
+            Remote • Full-time • $130,000 - $175,000
+          </p>
+          <div class="bg-[#EEF4FF] inline px-4 py-2.5 rounded-md">
+            <span class="text-md font-medium text-blackColor uppercase"
+              >Not Applied</span
+            >
+          </div>
+          <p class="pt-5 text-darkGrayColor">
+            Build cross-platform mobile applications using React Native. Work on
+            products used by millions of users worldwide.
+          </p>
+          <!-- button container -->
+          <div>
+            <button
+              class="bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
+            >
+              Interview
+            </button>
+            <button
+              class="bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
+            >
+              Rejected
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- No Job Available -->
+      <section
+        id="no-job-available"
+        class="hidden bg-white border border-[#e8e8ea] rounded-lg p-20 flex flex-col justify-center items-center"
+      >
+        <img src="./assets/jobs.png" alt="docs image" />
+        <h3 class="text-blackColor text-2xl font-medium mt-4 mb-2">
+          No jobs available
+        </h3>
+        <p class="text-grayColor">Check back soon for new job opportunities</p>
+      </section>
     </main>
     <script src="./utils.js"></script>
     <script src="./script.js"></script>
