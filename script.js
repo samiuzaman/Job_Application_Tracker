@@ -85,5 +85,11 @@ jobCardContainer.addEventListener("click", function (event) {
     card.classList.add("hidden");
     decrementTotalJobCount("dashboard-all-job-count");
     decrementTotalJobCount("nav-all-job-count");
+    const totalCard = document.getElementById("dashboard-all-job-count").innerText;
+    if (parseInt(totalCard) < 1) {
+      document.getElementById("no-job-available").classList.remove("hidden");
+    } else {
+      document.getElementById("no-job-available").classList.add("hidden");
+    }
   }
 });
