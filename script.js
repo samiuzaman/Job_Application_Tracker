@@ -11,6 +11,7 @@ document.getElementById("nav-btn-one").addEventListener("click", function (event
     document.getElementById("no-job-available").classList.add("hidden");
   }
 });
+
 document.getElementById("nav-btn-two").addEventListener("click", function (event) {
   buttonToggle(event.target);
   displayConditionalData("interview-job-container");
@@ -39,18 +40,46 @@ document.getElementById("nav-btn-three").addEventListener("click", function (eve
 // All Job Card Functionality
 const jobCardContainer = document.getElementById("job-card-container");
 jobCardContainer.addEventListener("click", function (event) {
+  // interview button task
   if (event.target.classList.contains("interview-btn")) {
-    console.log("Interview");
-    console.log(event.target);
     updatedJobCount("dashboard-interview-job-count");
     updatedJobCount("nav-interview-job-count");
+    const jobCard = event.target.parentElement.parentElement;
+    const jobTitle = jobCard.querySelector("#job-title").textContent;
+    const jobRole = jobCard.querySelector("#job-role").textContent;
+    const jobType = jobCard.querySelector("#job-type").textContent;
+    const jobStatus = "Interview";
+    const jobDescription = jobCard.querySelector("#job-description").textContent;
+    const interviewCard = displayReuseableJobCard(
+      jobTitle,
+      jobRole,
+      jobType,
+      jobStatus,
+      jobDescription,
+    );
+    console.log(interviewCard);
+    document.getElementById("interview-job-container").appendChild(interviewCard);
   }
 
+  // rejected button task
   if (event.target.classList.contains("rejected-btn")) {
-    console.log("rejected");
-    console.log(event.target);
     updatedJobCount("dashboard-rejected-job-count");
     updatedJobCount("nav-rejected-job-count");
+    const jobCard = event.target.parentElement.parentElement;
+    const jobTitle = jobCard.querySelector("#job-title").textContent;
+    const jobRole = jobCard.querySelector("#job-role").textContent;
+    const jobType = jobCard.querySelector("#job-type").textContent;
+    const jobStatus = "Rejected";
+    const jobDescription = jobCard.querySelector("#job-description").textContent;
+    const interviewCard = displayReuseableJobCard(
+      jobTitle,
+      jobRole,
+      jobType,
+      jobStatus,
+      jobDescription,
+    );
+    console.log(interviewCard);
+    document.getElementById("rejected-job-container").appendChild(interviewCard);
   }
 });
 

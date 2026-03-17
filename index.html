@@ -16,10 +16,7 @@
       rel="stylesheet"
     />
     <!-- Font Awesome CDN Link -->
-    <script
-      src="https://kit.fontawesome.com/27daea0603.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/27daea0603.js" crossorigin="anonymous"></script>
     <style type="text/tailwindcss">
       @theme {
         --color-greenColor: #10b981;
@@ -66,10 +63,7 @@
           class="w-full bg-white p-5 shadow-md rounded-lg mt-6 space-y-1 border border-[#E6E7E9]"
         >
           <h6 class="text-lg font-medium">Rejected</h6>
-          <p
-            id="dashboard-rejected-job-count"
-            class="text-2xl text-redColor font-extrabold pl-2"
-          >
+          <p id="dashboard-rejected-job-count" class="text-2xl text-redColor font-extrabold pl-2">
             0
           </p>
         </div>
@@ -82,8 +76,8 @@
           <h3 class="text-xl font-semibold text-blackColor">Available Jobs</h3>
           <p class="text-grayColor font-medium">
             <span id="nav-all-job-count">8</span>
-            <span id="nav-interview-job-count" class="hidden">1</span>
-            <span id="nav-rejected-job-count" class="hidden">2</span>
+            <span id="nav-interview-job-count" class="hidden">0</span>
+            <span id="nav-rejected-job-count" class="hidden">0</span>
             jobs
           </p>
         </div>
@@ -115,10 +109,10 @@
         <div class="bg-white p-5 border border-[#e8e8ea] rounded-lg space-y-4">
           <div class="flex justify-between items-center">
             <div>
-              <h3 class="text-xl font-semibold text-blackColor mb-1">
+              <h3 id="job-title" class="text-xl font-semibold text-blackColor mb-1">
                 Mobile First Corp
               </h3>
-              <h5 class="text-grayColor">React Native Developer</h5>
+              <h5 id="job-role" class="text-grayColor">React Native Developer</h5>
             </div>
             <button>
               <i
@@ -126,17 +120,15 @@
               ></i>
             </button>
           </div>
-          <p class="text-grayColor pb-1">
-            Remote • Full-time • $130,000 - $175,000
-          </p>
+          <p id="job-type" class="text-grayColor pb-1">Remote • Full-time • $130,000 - $175,000</p>
           <div class="bg-[#EEF4FF] inline px-4 py-2.5 rounded-md">
-            <span class="text-md font-medium text-blackColor uppercase"
+            <span id="job-status" class="text-md font-medium text-blackColor uppercase"
               >Not Applied</span
             >
           </div>
-          <p class="pt-5 text-darkGrayColor">
-            Build cross-platform mobile applications using React Native. Work on
-            products used by millions of users worldwide.
+          <p id="job-description" class="pt-5 text-darkGrayColor">
+            Build cross-platform mobile applications using React Native. Work on products used by
+            millions of users worldwide.
           </p>
           <!-- button container -->
           <div>
@@ -157,10 +149,10 @@
         <div class="bg-white p-5 border border-[#e8e8ea] rounded-lg space-y-4">
           <div class="flex justify-between items-center">
             <div>
-              <h3 class="text-xl font-semibold text-blackColor mb-1">
+              <h3 id="job-title" class="text-xl font-semibold text-blackColor mb-1">
                 WebFlow Agency
               </h3>
-              <h5 class="text-grayColor">Web Designer & Developer</h5>
+              <h5 id="job-role" class="text-grayColor">Web Designer & Developer</h5>
             </div>
             <button>
               <i
@@ -168,17 +160,17 @@
               ></i>
             </button>
           </div>
-          <p class="text-grayColor pb-1">
+          <p id="job-type" class="text-grayColor pb-1">
             Los Angeles, CA • Part-time • $80,000 - $120,000
           </p>
           <div class="bg-[#EEF4FF] inline px-4 py-2.5 rounded-md">
-            <span class="text-md font-medium text-blackColor uppercase"
+            <span id="job-status" class="text-md font-medium text-blackColor uppercase"
               >Not Applied</span
             >
           </div>
-          <p class="pt-5 text-darkGrayColor">
-            Create stunning web experiences for high-profile clients. Must have
-            portfolio and experience with modern web design trends.
+          <p id="job-description" class="pt-5 text-darkGrayColor">
+            Create stunning web experiences for high-profile clients. Must have portfolio and
+            experience with modern web design trends.
           </p>
           <!-- button container -->
           <div>
@@ -199,10 +191,10 @@
         <div class="bg-white p-5 border border-[#e8e8ea] rounded-lg space-y-4">
           <div class="flex justify-between items-center">
             <div>
-              <h3 class="text-xl font-semibold text-blackColor mb-1">
+              <h3 id="job-title" class="text-xl font-semibold text-blackColor mb-1">
                 DataViz Solutions
               </h3>
-              <h5 class="text-grayColor">Data Visualization Specialist</h5>
+              <h5 id="job-role" class="text-grayColor">Data Visualization Specialist</h5>
             </div>
             <button>
               <i
@@ -210,17 +202,17 @@
               ></i>
             </button>
           </div>
-          <p class="text-grayColor pb-1">
+          <p id="job-type" class="text-grayColor pb-1">
             Boston, MA • Full-time • $125,000 - $165,000
           </p>
           <div class="bg-[#EEF4FF] inline px-4 py-2.5 rounded-md">
-            <span class="text-md font-medium text-blackColor uppercase"
+            <span id="job-status" class="text-md font-medium text-blackColor uppercase"
               >Not Applied</span
             >
           </div>
-          <p class="pt-5 text-darkGrayColor">
-            Transform complex data into compelling visualizations. Required
-            skills: D3.js, React, and strong analytical thinking.
+          <p id="job-description" class="pt-5 text-darkGrayColor">
+            Transform complex data into compelling visualizations. Required skills: D3.js, React,
+            and strong analytical thinking.
           </p>
           <!-- button container -->
           <div>
@@ -241,10 +233,10 @@
         <div class="bg-white p-5 border border-[#e8e8ea] rounded-lg space-y-4">
           <div class="flex justify-between items-center">
             <div>
-              <h3 class="text-xl font-semibold text-blackColor mb-1">
+              <h3 id="job-title" class="text-xl font-semibold text-blackColor mb-1">
                 CloudFirst Inc
               </h3>
-              <h5 class="text-grayColor">Backend Developer</h5>
+              <h5 id="job-role" class="text-grayColor">Backend Developer</h5>
             </div>
             <button>
               <i
@@ -252,17 +244,17 @@
               ></i>
             </button>
           </div>
-          <p class="text-grayColor pb-1">
+          <p id="job-type" class="text-grayColor pb-1">
             Seattle, WA • Full-time • $140,000 - $190,000
           </p>
           <div class="bg-[#EEF4FF] inline px-4 py-2.5 rounded-md">
-            <span class="text-md font-medium text-blackColor uppercase"
+            <span id="job-status" class="text-md font-medium text-blackColor uppercase"
               >Not Applied</span
             >
           </div>
-          <p class="pt-5 text-darkGrayColor">
-            Design and maintain scalable backend systems using Python and AWS.
-            Work with modern DevOps practices and cloud infrastructure.
+          <p id="job-description" class="pt-5 text-darkGrayColor">
+            Design and maintain scalable backend systems using Python and AWS. Work with modern
+            DevOps practices and cloud infrastructure.
           </p>
           <!-- button container -->
           <div>
@@ -283,10 +275,10 @@
         <div class="bg-white p-5 border border-[#e8e8ea] rounded-lg space-y-4">
           <div class="flex justify-between items-center">
             <div>
-              <h3 class="text-xl font-semibold text-blackColor mb-1">
+              <h3 id="job-title" class="text-xl font-semibold text-blackColor mb-1">
                 Innovation Labs
               </h3>
-              <h5 class="text-grayColor">UI/UX Engineer</h5>
+              <h5 id="job-role" class="text-grayColor">UI/UX Engineer</h5>
             </div>
             <button>
               <i
@@ -294,18 +286,17 @@
               ></i>
             </button>
           </div>
-          <p class="text-grayColor pb-1">
+          <p id="job-type" class="text-grayColor pb-1">
             Austin, TX • Full-time • $110,000 - $150,000
           </p>
           <div class="bg-[#EEF4FF] inline px-4 py-2.5 rounded-md">
-            <span class="text-md font-medium text-blackColor uppercase"
+            <span id="job-status" class="text-md font-medium text-blackColor uppercase"
               >Not Applied</span
             >
           </div>
-          <p class="pt-5 text-darkGrayColor">
-            Create beautiful and functional user interfaces for our suite of
-            products. Strong design skills and frontend development expertise
-            required.
+          <p id="job-description" class="pt-5 text-darkGrayColor">
+            Create beautiful and functional user interfaces for our suite of products. Strong design
+            skills and frontend development expertise required.
           </p>
           <!-- button container -->
           <div>
@@ -326,10 +317,10 @@
         <div class="bg-white p-5 border border-[#e8e8ea] rounded-lg space-y-4">
           <div class="flex justify-between items-center">
             <div>
-              <h3 class="text-xl font-semibold text-blackColor mb-1">
+              <h3 id="job-title" class="text-xl font-semibold text-blackColor mb-1">
                 MegaCorp Solutions
               </h3>
-              <h5 class="text-grayColor">JavaScript Developer</h5>
+              <h5 id="job-role" class="text-grayColor">JavaScript Developer</h5>
             </div>
             <button>
               <i
@@ -337,18 +328,17 @@
               ></i>
             </button>
           </div>
-          <p class="text-grayColor pb-1">
+          <p id="job-type" class="text-grayColor pb-1">
             New York, NY • Full-time • $130,000 - $170,00
           </p>
           <div class="bg-[#EEF4FF] inline px-4 py-2.5 rounded-md">
-            <span class="text-md font-medium text-blackColor uppercase"
+            <span id="job-status" class="text-md font-medium text-blackColor uppercase"
               >Not Applied</span
             >
           </div>
-          <p class="pt-5 text-darkGrayColor">
-            Build enterprise applications with JavaScript and modern frameworks.
-            We offer competitive compensation, health insurance, and
-            professional development opportunities.
+          <p id="job-description" class="pt-5 text-darkGrayColor">
+            Build enterprise applications with JavaScript and modern frameworks. We offer
+            competitive compensation, health insurance, and professional development opportunities.
           </p>
           <!-- button container -->
           <div>
@@ -369,10 +359,8 @@
         <div class="bg-white p-5 border border-[#e8e8ea] rounded-lg space-y-4">
           <div class="flex justify-between items-center">
             <div>
-              <h3 class="text-xl font-semibold text-blackColor mb-1">
-                StartupXYZ
-              </h3>
-              <h5 class="text-grayColor">Full Stack Engineer</h5>
+              <h3 id="job-title" class="text-xl font-semibold text-blackColor mb-1">StartupXYZ</h3>
+              <h5 id="job-role" class="text-grayColor">Full Stack Engineer</h5>
             </div>
             <button>
               <i
@@ -380,18 +368,15 @@
               ></i>
             </button>
           </div>
-          <p class="text-grayColor pb-1">
-            Remote • Full-time • $120,000 - $160,000
-          </p>
+          <p id="job-type" class="text-grayColor pb-1">Remote • Full-time • $120,000 - $160,000</p>
           <div class="bg-[#EEF4FF] inline px-4 py-2.5 rounded-md">
-            <span class="text-md font-medium text-blackColor uppercase"
+            <span id="job-status" class="text-md font-medium text-blackColor uppercase"
               >Not Applied</span
             >
           </div>
-          <p class="pt-5 text-darkGrayColor">
-            Join our fast-growing startup and work on our core platform.
-            Experience with Node.js and React required. Great benefits and
-            equity package included.
+          <p id="job-description" class="pt-5 text-darkGrayColor">
+            Join our fast-growing startup and work on our core platform. Experience with Node.js and
+            React required. Great benefits and equity package included.
           </p>
           <!-- button container -->
           <div>
@@ -412,10 +397,10 @@
         <div class="bg-white p-5 border border-[#e8e8ea] rounded-lg space-y-4">
           <div class="flex justify-between items-center">
             <div>
-              <h3 class="text-xl font-semibold text-blackColor mb-1">
+              <h3 id="job-title" class="text-xl font-semibold text-blackColor mb-1">
                 TechCorp Industries
               </h3>
-              <h5 class="text-grayColor">Senior Frontend Developer</h5>
+              <h5 id="job-role" class="text-grayColor">Senior Frontend Developer</h5>
             </div>
             <button>
               <i
@@ -423,18 +408,17 @@
               ></i>
             </button>
           </div>
-          <p class="text-grayColor pb-1">
+          <p id="job-type" class="text-grayColor pb-1">
             San Francisco, CA • Full-time • $130,000 - $175,000
           </p>
           <div class="bg-[#EEF4FF] inline px-4 py-2.5 rounded-md">
-            <span class="text-md font-medium text-blackColor uppercase"
+            <span id="job-status" class="text-md font-medium text-blackColor uppercase"
               >Not Applied</span
             >
           </div>
-          <p class="pt-5 text-darkGrayColor">
-            We are looking for an experienced Frontend Developer to build
-            scalable web applications using React and TypeScript. You will work
-            with a talented team on cutting-edge projects.
+          <p id="job-description" class="pt-5 text-darkGrayColor">
+            We are looking for an experienced Frontend Developer to build scalable web applications
+            using React and TypeScript. You will work with a talented team on cutting-edge projects.
           </p>
           <!-- button container -->
           <div>
@@ -454,96 +438,12 @@
 
       <!-- Interview job container -->
       <section id="interview-job-container" class="hidden my-6 space-y-4">
-        <!-- card-one -->
-        <div
-          class="bg-white p-5 border border-[#e8e8ea] rounded-lg space-y-4"
-        >
-          <div class="flex justify-between items-center">
-            <div>
-              <h3 class="text-xl font-semibold text-blackColor mb-1">
-                Mobile First Corp Interview
-              </h3>
-              <h5 class="text-grayColor">React Native Developer</h5>
-            </div>
-            <button>
-              <i
-                class="text-grayColor border border-[#e7e7ea] p-3 rounded-full cursor-pointer fa-solid fa-trash-can"
-              ></i>
-            </button>
-          </div>
-          <p class="text-grayColor pb-1">
-            Remote • Full-time • $130,000 - $175,000
-          </p>
-          <div class="bg-[#EEF4FF] inline px-4 py-2.5 rounded-md">
-            <span class="text-md font-medium text-blackColor uppercase"
-              >Not Applied</span
-            >
-          </div>
-          <p class="pt-5 text-darkGrayColor">
-            Build cross-platform mobile applications using React Native. Work on
-            products used by millions of users worldwide.
-          </p>
-          <!-- button container -->
-          <div>
-            <button
-              class="bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
-            >
-              Interview
-            </button>
-            <button
-              class="bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
-            >
-              Rejected
-            </button>
-          </div>
-        </div>
+        <!-- dynamic interview card -->
       </section>
 
       <!--  Rejected job container -->
       <section id="rejected-job-container" class="hidden my-6 space-y-4">
-        <!-- card-one -->
-        <div
-          class="bg-white p-5 border border-[#e8e8ea] rounded-lg space-y-4"
-        >
-          <div class="flex justify-between items-center">
-            <div>
-              <h3 class="text-xl font-semibold text-blackColor mb-1">
-                Mobile First Corp Rejection
-              </h3>
-              <h5 class="text-grayColor">React Native Developer</h5>
-            </div>
-            <button>
-              <i
-                class="text-grayColor border border-[#e7e7ea] p-3 rounded-full cursor-pointer fa-solid fa-trash-can"
-              ></i>
-            </button>
-          </div>
-          <p class="text-grayColor pb-1">
-            Remote • Full-time • $130,000 - $175,000
-          </p>
-          <div class="bg-[#EEF4FF] inline px-4 py-2.5 rounded-md">
-            <span class="text-md font-medium text-blackColor uppercase"
-              >Not Applied</span
-            >
-          </div>
-          <p class="pt-5 text-darkGrayColor">
-            Build cross-platform mobile applications using React Native. Work on
-            products used by millions of users worldwide.
-          </p>
-          <!-- button container -->
-          <div>
-            <button
-              class="bg-white hover:bg-green-100 px-5 py-1.5 text-greenColor rounded-sm mr-3 cursor-pointer border-2 border-greenColor"
-            >
-              Interview
-            </button>
-            <button
-              class="bg-white hover:bg-red-100 px-5 py-1.5 text-redColor rounded-sm cursor-pointer border-2 border-redColor"
-            >
-              Rejected
-            </button>
-          </div>
-        </div>
+        Dynami
       </section>
 
       <!-- No Job Available -->
@@ -552,9 +452,7 @@
         class="hidden mt-5 bg-white border border-[#e8e8ea] rounded-lg p-20 flex flex-col justify-center items-center"
       >
         <img src="./assets/jobs.png" alt="docs image" />
-        <h3 class="text-blackColor text-2xl font-medium mt-4 mb-2">
-          No jobs available
-        </h3>
+        <h3 class="text-blackColor text-2xl font-medium mt-4 mb-2">No jobs available</h3>
         <p class="text-grayColor">Check back soon for new job opportunities</p>
       </section>
     </main>
