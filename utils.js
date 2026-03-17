@@ -31,6 +31,12 @@ function updatedJobCount(countId) {
   return (count.innerText = convertCount);
 }
 
+function decrementTotalJobCount(id) {
+  const totalJob = document.getElementById(id);
+  const updatedJob = parseInt(totalJob.innerText) - 1;
+  return (totalJob.textContent = updatedJob);
+}
+
 // dynamic card
 function displayReuseableJobCard(title, role, jobType, status, description) {
   const div = document.createElement("div");

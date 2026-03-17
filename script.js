@@ -57,7 +57,6 @@ jobCardContainer.addEventListener("click", function (event) {
       jobStatus,
       jobDescription,
     );
-    console.log(interviewCard);
     document.getElementById("interview-job-container").appendChild(interviewCard);
   }
 
@@ -78,12 +77,13 @@ jobCardContainer.addEventListener("click", function (event) {
       jobStatus,
       jobDescription,
     );
-    console.log(interviewCard);
     document.getElementById("rejected-job-container").appendChild(interviewCard);
   }
+  // Delete Button Task
+  if (event.target.classList.contains("delete-btn")) {
+    const card = event.target.parentElement.parentElement;
+    card.classList.add("hidden");
+    decrementTotalJobCount("dashboard-all-job-count");
+    decrementTotalJobCount("nav-all-job-count");
+  }
 });
-
-// const availableJobCount = document.getElementById("available-job-count");
-// if (parseInt(availableJobCount.innerText) === 0) {
-//   document.getElementById("no-job-available").classList.remove("hidden");
-// }
